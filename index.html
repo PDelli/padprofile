@@ -1,24 +1,60 @@
 <html>
-<header>
-	<link rel = "stylesheet" href = "cudecachorro.CSS">
-</header>
+<head>
+<style>
 
-<body>
-<div id="card" class="card">
-	//<img id = "mainchar" src = "https://i.pinimg.com/originals/89/5d/79/895d79a1776bfc0de2ceeccc494274d3.png">
-	//<img id = "background" src = "https://assets.codepen.io/439000/giphy.gif">
-	//<img id = "nameplate" src = "https://upload.wikimedia.org/wikipedia/pt/b/b7/Club_Penguin.png">
+.mainchar {
+  border: 1px solid #f10;
+  position: relative;
+  height: 600px;
+  width: 550px;
+  z-index: 2;
+  
+}
+
+.background {
+  border: 1px solid #f00;
+  position: relative;
+  height: 600px;
+  width: 550px;
+  z-index: 1;
+  top: -600px;
+  left: -12px;
+}
+
+.nameplate {
+  border: 1px solid #0f0;
+  position: relative;
+  height: 100px;
+  width: 250px;
+  z-index: 3;
+  top: -700px;
+  left: +150px;
+}
+</style>
+</head
+<body style="background-color:black;">
+
+<div id="card">
+
+
+
+  <img class = "mainchar" src = "https://i.pinimg.com/originals/89/5d/79/895d79a1776bfc0de2ceeccc494274d3.png">
+  
+  <img class = "background" src = 
+"https://assets.codepen.io/439000/giphy.gif">
+  
+  <img class = "nameplate" src =     "https://upload.wikimedia.org/wikipedia/pt/b/b7/Club_Penguin.png">
+
 </div>
 
 
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 <script>
 window.addEventListener("mousemove", (e) => {
 	w = window.innerWidth;
@@ -48,4 +84,5 @@ window.addEventListener("touchmove", (e) => {
 
 	
 </body>
+
 </html>
