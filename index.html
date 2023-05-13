@@ -2,7 +2,18 @@
 <head>
 <header>
 <style>
-
+.card{animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); } }
 .mainchar {
   border: 1px solid #f10;
   position: relative;
@@ -18,8 +29,8 @@
   height: 600px;
   width: 550px;
   z-index: 1;
-  top: +000px;
-  left: -550px;
+  top:  -600px;
+  left: px;
 }
 
 .nameplate {
@@ -28,14 +39,14 @@
   height: 100px;
   width: 250px;
   z-index: 3;
-  left: -1050px;
+  left: px;
 }
 </style>
 </header>
 </head
 <body style="background-color:black;">
 
-<div id="card">
+<div class="card">
 
 
 
@@ -57,30 +68,22 @@
 
 
 <script>
-window.addEventListener("mousemove", (e) => {
-	w = window.innerWidth;
-	h = window.innerHeight;
 
+	
+while(true){
+	w = Math.random() * 10;
+	h = Math.random() * 10;
+	console.log(w);
+    console.log(h);
 	const rotx = 7 - e.pageY * (14 / h);
 	const roty = -8 + e.pageX * (16 / w);
 
 	document.getElementById(
 		"card"
 	).style.transform = `rotateY(${roty}deg) rotateX(${rotx}deg)`;
-});
+}
 
-// translate touch movement into 3D rotation
-window.addEventListener("touchmove", (e) => {
-	w = window.innerWidth;
-	h = window.innerHeight;
 
-	const rotx = 7 - e.changedTouches[0].pageY * (14 / h);
-	const roty = -10 + e.changedTouches[0].pageX * (20 / w);
-
-	document.getElementById(
-		"card"
-	).style.transform = `rotateY(${roty}deg) rotateX(${rotx}deg)`;
-});
 </script>
 
 	
