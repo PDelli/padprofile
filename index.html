@@ -18,8 +18,10 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	width: 50%;
 }
 .card2{
 	animation-name: unfloating;
@@ -30,36 +32,41 @@
     margin-top: 5px;
 }
 
-.mainchar {
-  border: 1px solid #f10;
-  position: absolute;
+.background{
+  border: 1px solid #f00;
+  position: relative;
   height: 600px;
   width: 550px;
-  z-index: 2;
+  z-index: 1;
+  background-image: url(https://assets.codepen.io/439000/giphy.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.mainchar {
+  border: 1px solid #f10;
+  position: relative;
+  height: 600px;
+  width: 550px;
+  z-index: -1;
   background-image: url(https://i.pinimg.com/originals/89/5d/79/895d79a1776bfc0de2ceeccc494274d3.png);
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 
-.background {
-  border: 1px solid #f00;
-  position: absolute;
-  height: 600px;
-  width: 550px;
-  z-index: 5;
-  background-image: url();
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
 
 .nameplate {
   border: 1px solid #0f0;
-  position: absolute;
+  position: relative;
   height: 150px;
   width: 275px;
-  z-index: 6;
+  margin-top: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 1;
   background-image: url(https://upload.wikimedia.org/wikipedia/pt/b/b7/Club_Penguin.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,8 +80,8 @@
 <div class="card">
 <div class="card2">
 
-<div class="mainchar">
 <div class="background">
+<div class="mainchar">
 <div class="nameplate">
 
 
