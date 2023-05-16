@@ -4,9 +4,33 @@
 <head>
 <header>
 <style>
+@keyframes floating {
+	0% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0px); }
+}
+@keyframes unfloating {
+	0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+body {
+  background-image: url('https://i.pinimg.com/originals/33/8e/12/338e12ff9e19dd0a581ec294b46f1f96.jpg');
+  
+}
 
+.centerDiv{
+	animation-name: unfloating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	margin-left: auto;
+    margin-top: auto;
+    height: 600px;
+    width: 50%;
+}
 .background{
-	animation-name: ununfloating;
+	animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -25,12 +49,12 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 0px;
     height: 600px;
     width: 450px;
     position: absolute;
-    background-image: url(https://cdn.discordapp.com/attachments/150776126002823169/1107866211309584394/Ku.png);
+    background-image: url(https://media.discordapp.net/attachments/150776126002823169/1107873965348757594/Ku.png);
     background-size: clip;
     background-repeat: no-repeat;
     
@@ -40,7 +64,7 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: -122px;
+    margin-left: -132px;
     margin-top: auto;
     height: 600px;
     width: 550px;
@@ -66,21 +90,22 @@
 
 </style>
 </header>
-</head
-<body style="background-color:black;">
+</head>
+<body>
 
+
+<div class="centerDiv">
 <div class="background">
 <div class="character">
 <div class="frame">
 <div class="nameplate">
 
+</div>
+</div>
+</div>
+</div>
+</div>
 
-
-
-</div>
-</div>
-</div>
-</div>
 
 </body>
 </html>
