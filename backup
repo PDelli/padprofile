@@ -1,1 +1,167 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<html>
+<head>
+<header>
+<style>
+
+@keyframes floating {
+	0% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0px); }
+}
+@keyframes unfloating {
+	0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes ununfloating {
+	0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(10deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+.whoa{
+
+    display: block;
+    margin-top: -150%;
+  	margin-left: -100%;
+ 	margin-right: auto;
+  	width: 50%;
+    
+}
+.galactic{
+
+    display: block;
+    margin-top: 100%;
+  	margin-left: 450%;
+ 	margin-right: auto;
+  	width: 50%;
+}
+.apenguin{
+
+    display: block;
+    margin-top: 20%;
+  	margin-left: -900%;
+ 	margin-right: auto;
+  	width: 50%;
+}
+.card{
+	animation-name: floating;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	width: 50%;
+}
+.card2{
+	animation-name: unfloating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.card3{
+	animation-name: ununfloating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.background{
+  border: 1px solid #f00;
+  position: relative;
+  height: 600px;
+  width: 550px;
+  z-index: 1;
+  background-image: url(https://assets.codepen.io/439000/giphy.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.mainchar {
+  
+  border: 1px solid #f10;
+  position: relative;
+  height: 600px;
+  width: 550px;
+  z-index: -1;
+  background-image: url(https://i.pinimg.com/originals/89/5d/79/895d79a1776bfc0de2ceeccc494274d3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.nameplate {
+  border: 1px solid #0f0;
+  position: relative;
+  height: 150px;
+  width: 275px;
+  margin-top: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 1;
+  background-image: url(https://upload.wikimedia.org/wikipedia/pt/b/b7/Club_Penguin.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+</style>
+</header>
+</head
+<body style="background-color:black;">
+
+<div class="card">
+<div class="card2">
+<div class="card3">
+<div class="background">
+<div class="mainchar">
+<div class="nameplate">
+<div class="whoa">
+<font color = red size = 24>Whoa...</font>
+<div class="galactic">
+<font color = yellow size = 42>Galactic!!!</font>
+<div class="apenguin">
+<font color = blue size = 46>A PENGUIN???</font>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script>
+for (var i = 0; i < 9; i++) {
+  $(document).ready(function moveparty(){
+  $(document.getElementsByClassName("whoa")).fadeIn(0)
+  $(document.getElementsByClassName("whoa")).fadeOut(4000)
+  $(document.getElementsByClassName("whoa")).fadeIn(4000)
+  
+  $(document.getElementsByClassName("apenguin")).fadeIn(0)
+  $(document.getElementsByClassName("apenguin")).fadeOut(6000)
+  $(document.getElementsByClassName("apenguin")).fadeIn(6000)
+  
+  $(document.getElementsByClassName("galactic")).fadeIn(0)
+  $(document.getElementsByClassName("galactic")).fadeOut(8000)
+  $(document.getElementsByClassName("galactic")).fadeIn(8000)
+  
+
+  });
+
+}
+ 
+</script>
