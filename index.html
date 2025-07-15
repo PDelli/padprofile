@@ -1,9 +1,10 @@
 <div id="tempestade-container"></div>
 <style>
-body{
-	background-image: url('https://www.magicmurals.com/media/catalog/product/cache/af1e2a1566fa2dbb552605e8822354b7/D/P/DPX-0001975266_1.jpg');
-  background-size: auto;
+body {
+  background-image: url('https://www.magicmurals.com/media/catalog/product/cache/af1e2a1566fa2dbb552605e8822354b7/D/P/DPX-0001975266_1.jpg');
+  background-size: 100% 100%; /* Fills exactly, may distort the image */
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 #tempestade-container {
   position: fixed;
@@ -34,12 +35,12 @@ body{
   }
 }
 .character{
-    margin-left: 50vw;
-    margin-top: 0vw;
+    left: 25%;
+    top: 5vw;
     height: 600px;
     width: 450px;
-    position: absolute;
-    background-image: url(https://media.discordapp.net/attachments/175296135903051777/1392720382468816906/Leonardo_Anime_XL_Make_a_young_child_with_brown_skin_white_hai_3.png?ex=68708f6e&is=686f3dee&hm=16a137f599733696a6dfe32994396b8cf94e096647345327d776d6700897c1ec&=&format=webp&quality=lossless&width=638&height=960);
+    position: relative;
+    background-image: url(https://i.ibb.co/LdYDY4bG/imagem-2025-07-15-023150030.png);
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: fill;
@@ -49,7 +50,7 @@ body{
 }
 </style>
 <div class=character></div>
-<div style=position:absolute;top:1;left:1;margin:0;padding:0;>
+<div style=position:absolute;bot:1;right:1;margin:0;padding:0;>
 <audio controls autoplay id="myaudio" src=https://audio.jukehost.co.uk/lyf1Vuc75hDvea2Ri7PE5sP2lndZ2VNC>
 </audio>
 </div>
